@@ -52,6 +52,18 @@ services:
           name: n8n-db
           property: user
 
+             # AJOUTEZ CES VARIABLES POUR L'AUTHENTIFICATION :
+      - key: N8N_HOST
+        value: n8n-service-ykng.onrender.com
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_PORT
+        value: 5678
+      - key: WEBHOOK_URL
+        value: https://n8n-service-ykng.onrender.com
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-service-ykng.onrender.com
+
 databases:
   - name: n8n-db
     plan: free
